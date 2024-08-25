@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-image: url("./bgback3.png"); */
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.810);
+  backdrop-filter: blur(3px);
+
+height: max-content;
+color: white;
+}
+
+code {
+  font-family:  "Poppins", sans-serif;
+  color-scheme: dark;
+}
+
+
+.bg-glow-custom-2:hover{
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 15px 10px rgba(239, 149, 40, 0.85);
+
+}
+.container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container h1{
+  font-size: 2.5rem;
+  color: rgba(239, 149, 40, 0.85);
+  font-family: Poppins;
+}
+.container p{
+  font-size: 1.5rem;
+  color: rgba(239, 149, 40, 0.6);
+  font-family: Poppins;
+}
+
+.explore {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: Poppins;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.wallet{
+  width: 50px;
+
+}
+
+.underline-effect {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  }
+  
+  .underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: orange; /* Customize the color as needed */
+  transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .underline-effect:hover::after {
+  width: 100%;
+  left: 0;
+  }
+
+#textblock {
+  background-image: url(../public/landing_bg_animal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: max-content;
+}
+
+#textblock-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#textblock-title {
+  color: #ffaf1b;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Helvetica Neue";
+}
+
+#textblock-content {
+  color: #ffaf1b;
+  font-size: 20px;
+}
+
+#textblock-footer {
+  color: #ffaf1b;
+  font-size: 15px;
+  font-weight: 400;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+#textblock-devsense {
+  text-decoration: none;
+  color: #ffaf1b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.animation, .animation_layer {
+	height: 1000px;
+}
+
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+}
+
+#artback {
+  background-image: url(./images/background.png);
+}
+
+#mountain {
+  background-image: url(./images/mountains.png);
+}
+
+#logoland {
+  background-image: url(./images/logo_land.png);
+}
+
+#jungle1 {
+  background-image: url(./images/jungle1.png);
+}
+
+#jungle2 {
+  background-image: url(./images/jungle2.png);
+}
+
+#jungle3 {
+  background-image: url(./images/jungle3.png);
+}
+
+#jungle4 {
+  background-image: url(./images/jungle4.png);
+}
+
+#jungle5 {
+  background-image: url(./images/jungle5.png);
+}
+
+#manonmountain {
+  background-image: url(./images/man_on_mountain.png);
+}
+
+/* adding the CSS of the SAFARI Page 
+
+.landing_bg_animal { 
+   
+  background-image: url(../public/landing_bg_animal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: max-content;
+  width: 100%;
+}
+
+.background-safari {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.video-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  margin: 10px;
+  width: 45%;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+*/
+
+.button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn { 
+  height : 40px;
+  width: 250px;
+  border: 2px solid orangered;
+  background-color:rgba(134, 41, 16, 0.815) ;
+  margin: 10px 10px;
+  padding: 5px 5px;
+  border-radius: 10px ;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  color: #FFDE59;
+  transition: all .4s ease;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFDE59;
+  border-radius: 4px;
+  width: 4px;
+  transition: all .4s ease;
+}
